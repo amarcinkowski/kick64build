@@ -23,5 +23,6 @@ done:
 // PETSCII (duże litery)
 .encoding "petscii_upper"
 message:
-    .text "HELLO WORLD!", $0d  // $0d = nowa linia
+    .text "HELLO WORLD!"
+    .byte $0d  // $0d = nowa linia
     .byte 0                    // terminator
