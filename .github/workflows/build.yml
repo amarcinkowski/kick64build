@@ -20,7 +20,7 @@ jobs:
         docker run --rm -v ${{ github.workspace }}:/src ghcr.io/amarcinkowski/super64setup kickass src/main.asm -o out/main.prg
 
     - name: Upload artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: c64-program
         path: out/main.prg
