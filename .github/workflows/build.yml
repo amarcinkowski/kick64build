@@ -17,7 +17,7 @@ jobs:
     - name: Run compilation
       run: |
         mkdir -p out
-        docker run --rm -v ${{ github.workspace }}:/src ghcr.io/amarcinkowski/super64setup kickass src/main.asm -o out/main.prg
+        docker run --rm -v ${{ github.workspace }}:/src ghcr.io/amarcinkowski/super64setup src/main.asm -o out/main.prg
 
     - name: Upload artifact
       uses: actions/upload-artifact@v4
