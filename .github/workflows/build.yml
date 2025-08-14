@@ -17,6 +17,8 @@ jobs:
     - name: Run compilation
       run: |
         mkdir -p out
+        ls -la
+        pwd
         docker run --rm -v ${{ github.workspace }}:/src ghcr.io/amarcinkowski/super64setup src/main.asm -o out/main.prg
 
     - name: Upload artifact
